@@ -5,8 +5,10 @@ class Node {
     this.data = data;
     this.prev = prev;
     this.next = next;
+    this.site = (prev === null ? 0 : prev.site + 1);
     this.hidden = false;
-    this.id = idCount++;
+    this.id = [this.site, idCount];
+    idCount++;
   }
 
   delete(node) {
