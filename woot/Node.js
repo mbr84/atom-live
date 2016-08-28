@@ -6,7 +6,7 @@ class Node {
     this.prev = prev;
     this.next = next;
     this.site = (prev === null ? 0 : prev.site + 1);
-    this.hidden = false;
+    this.visible = true;
     this.id = [this.site, idCount];
     idCount++;
   }
@@ -16,7 +16,7 @@ class Node {
     const prev = node.prev;
     prev.next = next;
     next.prev = prev;
-    node.hidden = true;
+    node.visible = false;
   }
 
   static ins(data, prev) {
