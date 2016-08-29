@@ -1,0 +1,16 @@
+{
+  "name": "atomic field",
+  "version": "0.0.0",
+  "description": "Atomic Field turns atom into a live collaborative editor",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbr84/atom-live.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbr84/atom-live/issues"
+  }
+}
